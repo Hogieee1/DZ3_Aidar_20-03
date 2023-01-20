@@ -1,0 +1,35 @@
+.logo img {
+    width: 150px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding-left: 20px;
+    font-size: 18px;
+    width: 500px;
+    height: 40px;
+    border: 2px solid #ba6214;
+}
+
+.search button {
+    border: 1px solid #ba6214;
+    /* border-radius: 15px; */
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #ba6214;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+
+.search button:hover {
+    transform: scale(1.1);
+}
