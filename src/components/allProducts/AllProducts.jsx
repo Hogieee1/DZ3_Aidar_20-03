@@ -7,14 +7,15 @@ const bike = [
         name: 'SOFTAIL® STANDARD', 
         price: 'Starting at $14,399',
         title: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, veritatis.', 
-        img: '../public/bike-1.jpg'
+        wishlist: 'Added to wishlist',
+        img: '../public/bike-1.jpg',
     },
     {
         id: 2, 
-        name: 'STREET BOB® 114',
+        name: 'FAT BOB® 114',
         price: 'Starting at $16,599',
         title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus harum magnam hic exercitationem odit fugit.', 
-        img: '../public/bike-2.jpg'
+        img: '../public/bike-2.jpg',
     },
     {
         id: 3, 
@@ -51,7 +52,7 @@ function AllProducts() {
     return (
         <div className='products'>
             {
-                bike.map(product => <Product key={product.id} product={product} />)
+                bike.map(product => <Product key={product.id} product={product}/>)
             }
         </div>
     )

@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     width: 450px;
-    height: 450px;
+    height: 480px;
     color: #000;
 }
 
@@ -15,4 +16,26 @@
 .product span {
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.wishlistBtn {
+    margin-top: 15px;
+    border: 2px solid #ba6214;
+    background-color: #ba6214;
+    color: #fff;
+    font-weight: 600;
+    width: 130px;
+    height: 40px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.product button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.added {
+    background-color: #fff;
+    color: #ba6214;
 }
