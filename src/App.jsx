@@ -8,11 +8,13 @@ function App() {
     alert(`К сожалению мы еще не добавили товары в (${e.target.innerHTML})`)
   }
 
-
+  const handleInput =(e) => {
+    console.log(`Вы сделали поиск по запросу: ${e.target.value}`)
+  }
 
   return (
     <div className="App">
-      <Search/>
+      <Search handle={handleInput}/>
       <Navigation onLink={handleLink}/>
       <AllProducts/>
     </div>

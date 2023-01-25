@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import styles from './search.module.css' 
 
 
 
-function Search() {
+function Search({handle}) {
 
     const [count, setCount] = useState('0')
 
@@ -14,7 +14,7 @@ function Search() {
             </div>
 
             <form className={styles.search}>
-                <input type='text'/>
+                <input type='text' onChange={handle}/>
                 <button>Search</button>
             </form>
 
